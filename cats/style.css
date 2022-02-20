@@ -1,0 +1,35 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	font-size: 20px;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.navi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 5px 0 #0006;
+	padding: 30px calc(50% - 500px);
+}
+.logo__img {
+	width: 50px;
+}
+.main__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	gap: 50px;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.footer {
+	box-shadow: 0 0 5px 0 #0006;
+	display: flex;
+	justify-content: center;
+}
