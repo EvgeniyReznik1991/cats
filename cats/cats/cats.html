@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Коты</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="navi">
+		<img class="logo__img" src="img/cat-fill.svg" alt="Бабуленькины котики">
+		<span class="logo__text">Бабуленькины котики</span>
+	</header>
+	<div class="container">
+		<div class="btns">
+			<button type="button" class="reload-data">Обновить данные</button>
+			<button type="button" id="button-add-cat">Добавить нового</button>
+		</div>
+		<main class="content">
+			<ul class="cats-list">
+			</ul>
+		</main>
+	</div>
+	<div class="root-popup">
+		<div class="popup popup_type_cats-info">
+			<div class="popup__container">
+				<button type="button" class="popup__close">x</button>
+				<img src="" alt="" class=" popup__image">
+				<p class="popup__name"></p>
+				<p class="popup__text"></p>
+			</div>
+		</div>
+		<div class="popup popup_type_cats-add">
+			<div class="popup__container">
+				<button type="button" class="popup__close">x</button>
+				<form class="popup__form">
+					<input type="text" placeholder="id" name="id" id="id">
+					<input type="text" placeholder="Имя" name="name" id="name">
+					<input type="text" placeholder="Изображение" name="img_link" id="img_link">
+					<input type="text" placeholder="Описание" name="description" id="description">
+					<button type="submit" class="btn__send">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup popup_type_cats-edit">
+			<div class="popup__container">
+				<button type="button" class="popup__close">x</button>
+				<form class="popup__form">
+					<input type="text" class="popup__form-input" placeholder="id" name="id">
+					<input type="text" class="popup__form-input" placeholder="Имя" name="name">
+					<input type="text" class="popup__form-input" placeholder="Изображение" name="img_link">
+					<input type="text" class="popup__form-input" placeholder="Описание" name="description">
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<template id="card-tempalte">
+		<li class="cats-list__item cat">
+			<img src="" class="cat__image" alt="котик">
+			<button class="cat__delete">удалить</button>
+			<button class="cat__edit">ред</button>
+			<p class="cat__title"></p>
+		</li>
+	</template>
+	<footer class="footer">©2022 All rights reserved</footer>
+	<script src="./cats.js" defer></script>
+	<script src="./script.js" defer></script>
+</body>
+
+</html>
